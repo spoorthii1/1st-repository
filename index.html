@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spoorti Maruti Marathe | Portfolio</title>
+
+    <style>
+        /* General Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1e3a8a; /* Blue Background */
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: slideIn 1.5s ease;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: lighter;
+            color: #f9fafb; /* Lighter shade */
+            animation: slideIn 2s ease;
+        }
+
+        p {
+            max-width: 600px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            animation: fadeInUp 2s ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: #60a5fa; /* Lighter blue for links */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2563eb;
+        }
+
+        /* Button Style */
+        .btn {
+            background-color: #2563eb; /* Dark Blue */
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+            animation: fadeInUp 2.5s ease;
+        }
+
+        .btn:hover {
+            background-color: #3b82f6;
+            transform: scale(1.05);
+        }
+
+        /* Keyframes for Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Spoorti Maruti Marathe</h1>
+        <h2>Software Engineer | Cloud Enthusiast | Arduino Developer</h2>
+
+        <p>
+            Hi, I’m Spoorti! A passionate developer specialized in cloud technologies, 
+            Arduino projects, and innovative tech solutions. I love solving complex problems 
+            and building smart, user-friendly applications.
+        </p>
+
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</body>
+</html>
